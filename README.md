@@ -10,7 +10,7 @@ This setuop use Google Kubernetes Engine
 To initialize blog cluster
 
 Run
-`./blog-up.sh _(google-cloud-key-json-file)_`
+`./blog-up.sh (google-cloud-key-json-file)`
 enter cluster name and mysql password
 
 
@@ -18,7 +18,7 @@ After finished initialize, will have message that say the address of the blog.
 
 
 To Resize baseline capacity run
-`./blog-resize.sh _(numberofreplica)_`
+`./blog-resize.sh (numberofreplica)`
 
 If you want to clean the cluster, just run
 `./clean.sh`
