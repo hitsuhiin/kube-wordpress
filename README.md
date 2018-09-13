@@ -13,12 +13,16 @@ Run
 `./blog-up.sh (google-cloud-key-json-file)`
 enter cluster name and mysql password
 
+Example
+`./blog-up.sh project-1224234.json`
 
 After finished initialize, will have message that say the address of the blog.
 
 
 To Resize baseline capacity run
 `./blog-resize.sh (numberofreplica)`
+Example
+`./blog-resize.sh 5`
 
 If you want to clean the cluster, just run
 `./clean.sh`
