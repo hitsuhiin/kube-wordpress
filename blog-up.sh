@@ -33,6 +33,10 @@ kubectl apply -f wordpress-service.yaml
 
 ip_pub=$(kubectl get service wordpress --no-headers | awk {'print $4'})
 
-sleep 120
+while [[ $ip_pub = "<pending>" ]]
+do
+    ip_pub=$(kubectl get service wordpress --no-headers | awk {'print $4'})
+done
+
 
 echo "Done. Your blog is ready at http://$ip_pub"
